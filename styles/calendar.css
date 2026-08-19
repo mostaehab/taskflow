@@ -1,0 +1,57 @@
+/* TaskFlow palette for the FullCalendar "monarch" theme.
+   Replaces the stock purple palette (@fullcalendar/react/themes/monarch/palettes/purple.css)
+   by mapping every variable it defines onto the app tokens from globals.css.
+   Light scheme only: the app has no dark mode. */
+
+:root {
+  /* primary */
+  --fc-monarch-primary: var(--color-primary);
+  --fc-monarch-primary-foreground: var(--color-foreground-inverse);
+  --fc-monarch-primary-over: var(--color-primary-hover);
+  --fc-monarch-primary-down: var(--color-primary-active);
+
+  /* secondary */
+  --fc-monarch-secondary: var(--color-primary-soft);
+  --fc-monarch-secondary-foreground: var(--color-primary);
+  --fc-monarch-secondary-over: oklch(0.93 0.028 288);
+  --fc-monarch-secondary-down: oklch(0.905 0.032 288);
+
+  /* tertiary */
+  --fc-monarch-tertiary: var(--color-tertiary);
+  --fc-monarch-tertiary-foreground: var(--color-foreground-inverse);
+  --fc-monarch-tertiary-over: oklch(0.56 0.02 286);
+  --fc-monarch-tertiary-down: oklch(0.49 0.02 286);
+
+  /* calendar content */
+  --fc-monarch-event: var(--fc-monarch-primary);
+  --fc-monarch-event-contrast: var(--fc-monarch-primary-foreground);
+  --fc-monarch-highlight: oklch(0.54 0.21 285 / 0.1);
+  --fc-monarch-now: var(--color-danger);
+
+  /* controls */
+  --fc-monarch-selected: var(--color-secondary);
+  --fc-monarch-selected-foreground: var(--color-foreground-inverse);
+  --fc-monarch-selected-over: oklch(0.35 0.035 290);
+  --fc-monarch-selected-down: oklch(0.27 0.035 290);
+  --fc-monarch-outline: oklch(0.54 0.21 285 / 0.5);
+
+  /* popover */
+  --fc-monarch-popover: var(--color-surface);
+
+  /* neutral backgrounds */
+  --fc-monarch-background: var(--color-surface);
+  --fc-monarch-faint: oklch(0.45 0.03 290 / 0.06);
+  --fc-monarch-muted: oklch(0.45 0.03 290 / 0.1);
+  --fc-monarch-strong: oklch(0.45 0.03 290 / 0.2);
+  --fc-monarch-stronger: oklch(0.45 0.03 290 / 0.25);
+  --fc-monarch-strongest: oklch(0.45 0.03 290 / 0.3);
+
+  /* neutral foregrounds */
+  --fc-monarch-foreground: var(--color-foreground);
+  --fc-monarch-faint-foreground: var(--color-foreground-disabled);
+  --fc-monarch-muted-foreground: var(--color-foreground-secondary);
+
+  /* neutral borders */
+  --fc-monarch-border: var(--color-border);
+  --fc-monarch-strong-border: oklch(0.845 0.012 286);
+}
